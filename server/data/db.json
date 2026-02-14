@@ -88,7 +88,7 @@
       "studentEmail": "fusionflarepath@gmail.com",
       "paymentMethod": "cash",
       "notes": "",
-      "status": "delivered",
+      "status": "preparing",
       "createdAt": "2026-02-14T07:47:29.404Z",
       "items": [
         {
@@ -104,16 +104,16 @@
   ],
   "sessions": [
     {
-      "token": "5fd2d14c4ede698fffa6e2202c650d8fc8a6fb912c353c32",
+      "token": "b85e07b9c0f80e317c885c4fee773461f6e2b4014eedf2e6",
       "role": "student",
       "userId": "stu-1771055205069",
-      "createdAt": "2026-02-14T07:46:45.069Z"
+      "createdAt": "2026-02-14T08:38:19.100Z"
     },
     {
-      "token": "c55a7c076fb35353de820cb312df252dc0c341b159c9b7e1",
+      "token": "d593b35bf6e79b9c7fc828d1f393ea347a1a5d091c312e86",
       "role": "admin",
       "userId": "admin-1",
-      "createdAt": "2026-02-14T07:47:14.153Z"
+      "createdAt": "2026-02-14T08:38:40.458Z"
     }
   ],
   "students": [
@@ -131,6 +131,6 @@
     }
   ],
   "meta": {
-    "nextOrderId": 1002
+    "nextOrderId": 1003
   }
 }
