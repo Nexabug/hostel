@@ -1,0 +1,386 @@
+.page {
+  max-width: 1160px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 2rem;
+  border-radius: 22px;
+  background: linear-gradient(130deg, #0f172a, #0b4a6f);
+  color: #f8fafc;
+  box-shadow: 0 18px 40px rgba(12, 25, 45, 0.28);
+  animation: rise 420ms ease;
+}
+
+.eyebrow {
+  margin: 0;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #bfdbfe;
+}
+
+.hero h1 {
+  margin: 0.45rem 0;
+  font-size: clamp(1.8rem, 3.4vw, 2.8rem);
+  line-height: 1.15;
+}
+
+.subtext {
+  margin: 0;
+  color: #dbeafe;
+  max-width: 55ch;
+}
+
+.status-chip {
+  align-self: flex-start;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  padding: 0.5rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  backdrop-filter: blur(6px);
+}
+
+.hero-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+
+.link-btn {
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: #fff;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  padding: 0.42rem 0.75rem;
+  cursor: pointer;
+}
+
+.layout {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: 1.4fr 1fr;
+}
+
+.view-switch {
+  display: inline-flex;
+  width: fit-content;
+  border: 1px solid #c9d9e8;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #f2f8ff;
+}
+
+.view-switch button {
+  border: 0;
+  background: transparent;
+  padding: 0.55rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.view-switch button.active {
+  background: linear-gradient(120deg, #0b61a4, #0f8a9d);
+  color: #fff;
+}
+
+.panel {
+  border-radius: 18px;
+  border: 1px solid #d8e3ef;
+  background: #ffffffcc;
+  box-shadow: 0 10px 25px rgba(20, 54, 86, 0.1);
+  backdrop-filter: blur(3px);
+}
+
+.panel h2 {
+  margin: 0 0 0.9rem;
+  font-size: 1.2rem;
+}
+
+.auth-panel {
+  padding: 1.2rem;
+  max-width: 560px;
+}
+
+.menu-panel,
+.checkout-panel {
+  padding: 1.2rem;
+}
+
+.category {
+  margin-bottom: 1.2rem;
+}
+
+.category h3 {
+  margin: 0 0 0.65rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #1d4f7a;
+}
+
+.item-grid {
+  display: grid;
+  gap: 0.7rem;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+}
+
+.item-card {
+  border: 1px solid #dce9f5;
+  background: #f8fbff;
+  border-radius: 12px;
+  padding: 0.85rem;
+}
+
+.item-title {
+  margin: 0;
+  font-weight: 600;
+}
+
+.item-price {
+  margin: 0.35rem 0 0.75rem;
+  color: #1d4f7a;
+}
+
+.qty-row {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.qty-row button {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  border: 1px solid #c2d4e7;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.qty-row button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+.qty-row span {
+  min-width: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.checkout-form {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.checkout-form input,
+.checkout-form select,
+.checkout-form textarea {
+  border: 1px solid #cad8e7;
+  border-radius: 10px;
+  padding: 0.72rem;
+  font: inherit;
+}
+
+.checkout-form button {
+  border: none;
+  border-radius: 12px;
+  padding: 0.8rem 1rem;
+  color: #fff;
+  background: linear-gradient(120deg, #0b61a4, #0f8a9d);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.checkout-form button:disabled {
+  opacity: 0.6;
+  cursor: progress;
+}
+
+.cart-box {
+  border: 1px dashed #b9cde1;
+  border-radius: 10px;
+  background: #f4faff;
+  padding: 0.75rem;
+}
+
+.cart-box p {
+  margin: 0.28rem 0;
+}
+
+.total {
+  margin-top: 0.5rem;
+  font-weight: 700;
+}
+
+.notice {
+  margin: 0.2rem 0 0;
+  color: #0f4f83;
+  font-weight: 500;
+}
+
+.recent-panel {
+  padding: 1.2rem;
+}
+
+.recent-panel ul {
+  margin: 0;
+  padding-left: 1rem;
+  display: grid;
+  gap: 0.45rem;
+}
+
+.admin-panel {
+  padding: 1.2rem;
+}
+
+.admin-subtext {
+  margin: 0 0 0.8rem;
+  color: #255275;
+}
+
+.admin-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.admin-topbar .link-btn {
+  color: #0d3b66;
+  background: #eef6ff;
+  border-color: #bed7f0;
+}
+
+.admin-login {
+  max-width: 360px;
+}
+
+.admin-list {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.admin-card {
+  border: 1px solid #d6e4f2;
+  border-radius: 12px;
+  background: #f9fcff;
+  padding: 0.9rem;
+}
+
+.admin-card p {
+  margin: 0.25rem 0;
+}
+
+.admin-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+  margin-bottom: 0.4rem;
+}
+
+.admin-head h3 {
+  margin: 0;
+}
+
+.status-badge {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  border-radius: 999px;
+  padding: 0.24rem 0.6rem;
+  border: 1px solid;
+}
+
+.status-badge.pending {
+  color: #92400e;
+  border-color: #fcd34d;
+  background: #fffbeb;
+}
+
+.status-badge.accepted {
+  color: #1e40af;
+  border-color: #93c5fd;
+  background: #eff6ff;
+}
+
+.status-badge.preparing {
+  color: #0f766e;
+  border-color: #5eead4;
+  background: #f0fdfa;
+}
+
+.status-badge.delivered {
+  color: #166534;
+  border-color: #86efac;
+  background: #f0fdf4;
+}
+
+.status-badge.cancelled {
+  color: #991b1b;
+  border-color: #fca5a5;
+  background: #fef2f2;
+}
+
+.admin-actions {
+  margin-top: 0.7rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.admin-actions button {
+  border: 1px solid #b4c9de;
+  border-radius: 8px;
+  background: #fff;
+  padding: 0.42rem 0.7rem;
+  cursor: pointer;
+}
+
+.admin-actions .danger {
+  border-color: #f5b8b8;
+  color: #9f1239;
+}
+
+.admin-actions button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero-actions {
+    align-items: flex-start;
+  }
+
+  .admin-topbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

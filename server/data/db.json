@@ -1,0 +1,136 @@
+{
+  "menu": [
+    {
+      "id": "m1",
+      "name": "Classic Masala Maggi",
+      "category": "Maggi",
+      "price": 45,
+      "inStock": true
+    },
+    {
+      "id": "m2",
+      "name": "Cheese Maggi",
+      "category": "Maggi",
+      "price": 65,
+      "inStock": true
+    },
+    {
+      "id": "m3",
+      "name": "Egg Maggi",
+      "category": "Maggi",
+      "price": 70,
+      "inStock": true
+    },
+    {
+      "id": "d1",
+      "name": "Coca-Cola (500ml)",
+      "category": "Cold Drinks",
+      "price": 40,
+      "inStock": true
+    },
+    {
+      "id": "d2",
+      "name": "Sprite (500ml)",
+      "category": "Cold Drinks",
+      "price": 40,
+      "inStock": true
+    },
+    {
+      "id": "d3",
+      "name": "Cold Coffee",
+      "category": "Cold Drinks",
+      "price": 55,
+      "inStock": true
+    },
+    {
+      "id": "s1",
+      "name": "Salted Chips",
+      "category": "Snacks",
+      "price": 25,
+      "inStock": true
+    },
+    {
+      "id": "s2",
+      "name": "Aloo Bhujia",
+      "category": "Snacks",
+      "price": 30,
+      "inStock": true
+    },
+    {
+      "id": "s3",
+      "name": "Nachos",
+      "category": "Snacks",
+      "price": 45,
+      "inStock": true
+    },
+    {
+      "id": "b1",
+      "name": "Parle-G Biscuit",
+      "category": "Biscuits",
+      "price": 10,
+      "inStock": true
+    },
+    {
+      "id": "b2",
+      "name": "Oreo Biscuit",
+      "category": "Biscuits",
+      "price": 30,
+      "inStock": true
+    }
+  ],
+  "orders": [
+    {
+      "id": 1001,
+      "orderNumber": "HG-1001",
+      "customerName": "Prince Kumar Yadav",
+      "roomNumber": "607",
+      "phone": "8734687263872",
+      "studentEmail": "fusionflarepath@gmail.com",
+      "paymentMethod": "cash",
+      "notes": "",
+      "status": "delivered",
+      "createdAt": "2026-02-14T07:47:29.404Z",
+      "items": [
+        {
+          "itemId": "m3",
+          "name": "Egg Maggi",
+          "price": 70,
+          "quantity": 2,
+          "lineTotal": 140
+        }
+      ],
+      "total": 140
+    }
+  ],
+  "sessions": [
+    {
+      "token": "5fd2d14c4ede698fffa6e2202c650d8fc8a6fb912c353c32",
+      "role": "student",
+      "userId": "stu-1771055205069",
+      "createdAt": "2026-02-14T07:46:45.069Z"
+    },
+    {
+      "token": "c55a7c076fb35353de820cb312df252dc0c341b159c9b7e1",
+      "role": "admin",
+      "userId": "admin-1",
+      "createdAt": "2026-02-14T07:47:14.153Z"
+    }
+  ],
+  "students": [
+    {
+      "id": "stu-1771055205069",
+      "name": "Prince Kumar Yadav",
+      "email": "fusionflarepath@gmail.com",
+      "provider": "email"
+    }
+  ],
+  "admins": [
+    {
+      "id": "admin-1",
+      "pinHash": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4"
+    }
+  ],
+  "meta": {
+    "nextOrderId": 1002
+  }
+}
